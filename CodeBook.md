@@ -14,7 +14,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 - An identifier of the subject who carried out the experiment (entries contained in `subject_train.txt` and `subject_test.txt`)
 
 ### Transformations Involved to Clean Up Data 
- + In the first step, `rbind()` and '`cbind()` were used to combine the data frames and columns together to form the dataset 
+ + In the first step, `rbind()` and `cbind()` were used to combine the data frames and columns together to form the dataset 
  + `read.table()`, other than reading the txt files into R, is also used to read the feature and activity labels into R
  + `grep()` is used to look for all instances of the column names containing `mean()` and `std()`, and subsetting is used to subset only the columns from the dataset that represent the mean or standard deviation of a measurement from either an accelerometer or gyroscope
  + `gsub()` is used to replace the activity numbers in the `Activity` column with their respective activity names (based on `activity_labels.txt`), and the results are saved to the original dataset by using variable assignment of the same name and a for loop to loop through all of the possible activity numbers (i.e. integers 1 to 6)
