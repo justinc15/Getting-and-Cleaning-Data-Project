@@ -9,3 +9,5 @@ The script cleans and tidies up the dataset based on the 5 main procedures that 
 3. The integers in the *Activity* column of the dataset will be replaced by their respective activity names (based on their index in `activity_labels.txt`)
 4. The column names in the modified dataset will be replaced to add description to the variable measurements (for example: "f" with "frequencyDomain", "Acc" with "accelerometer" etc.)
 5. Using the modified dataset, the script will proceed to summarize the variable measurements for each activity and each subject, returning a new data frame containing only the means of each measurement for each subject and each activity that they have participated in (which would be written into the file `tidy_data.txt` (as seen in the repository))
+
+**<ins>NOTE</ins>:** Running the script `run_analysis.R` would produce the file `tidy_data.txt`, the clean and summarized version of the original dataset.
